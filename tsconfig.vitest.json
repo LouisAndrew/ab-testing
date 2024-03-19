@@ -1,6 +1,9 @@
 {
   "extends": "./tsconfig.app.json",
-  "exclude": [],
+  "include": [
+    "src/**.spec.ts",
+    "./*.config.ts"
+  ],
   "compilerOptions": {
     "composite": true,
     "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.vitest.tsbuildinfo",
